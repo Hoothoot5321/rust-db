@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<style>
+    /*@css*/
+</style>
+
+<body>
+    <p style="visibility: hidden;" id="msg_display">a</p>
+    <label for="search_string">Database Name</label>
+    <input id="search_string" list="databases">
+    <datalist id="databases">
+    </datalist>
+    <button>Get database</button>
+    <button>Create database</button>
+    <table id="table_list">
+        <tr>
+            <th>Tables</th>
+        </tr>
+    </table>
+    <label for="table_name">Table Name</label>
+    <input type="text" id="table_name">
+    <select name="" id="table_selector">
+        <option value="create">Create</option>
+        <option value="update">Update</option>
+    </select>
+    <div id="creating_div" style="display: inline;">
+        <table id="table">
+            <tbody>
+
+                <tr>
+                    <th style="display: flex;">
+                        <button id="add_column">Add Column</button>
+                    </th>
+
+
+                </tr>
+            </tbody>
+        </table>
+        <button id="get_table">Get Table</button>
+        <button id="create_table">Create Table</button>
+
+    </div>
+    <div id="updating_div" style="display: none;">
+        <div style="display: flex;">
+            <table id="best_table">
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="display: flex; flex-flow: column;">
+                <input type="text" style="flex: 0 1 auto">
+
+                <button id="add_column_button" style="flex: 1 1 auto;">Add Column</button>
+            </div>
+        </div>
+        <button id="add_row_button">Add Row</button>
+        <button id="update_table_button">Update Table</button>
+    </div>
+    <script type="module">
+        //js
+    </script>
+</body>
+
+</html>
